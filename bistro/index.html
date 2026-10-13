@@ -4,6 +4,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Black Goose Bistro</title>
 
   <style>
@@ -40,47 +42,52 @@
       text-align: center;
     }
 
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    nav a {
-      color: orange;
-      margin: 0 10px;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
     a {
-      color: floralwhite;
+      color: #ffcc80;
     }
 
     a:hover {
-      color: orange;
+      color: white;
     }
 
-    .recipes {
+    nav {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 12px;
+    }
+
+    section {
+      margin-bottom: 35px;
+    }
+
+    .links {
       text-align: center;
       margin-top: 35px;
     }
 
-    .recipes ul {
+    .links ul {
       list-style-type: none;
       padding: 0;
     }
 
-    .recipes li {
+    .links li {
       margin: 12px 0;
     }
 
-    .spoon {
-      width: 30px;
-      height: auto;
-      vertical-align: middle;
-      margin-right: 10px;
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #faf2e4;
     }
   </style>
 
@@ -97,89 +104,73 @@
 
   <nav>
     <a href="index.html">Home</a>
+    <a href="bgnews.html">Bistro News</a>
     <a href="about.html">About</a>
     <a href="glossary-done.html">Glossary</a>
-    <a href="bgnews.html">News</a>
+    <a href="../jenskitchen/index.html">Jen's Kitchen</a>
   </nav>
 
-  <h2>The Restaurant</h2>
+  <section>
+    <h2>The Restaurant</h2>
 
-  <p>
-    The Black Goose Bistro offers casual lunch and dinner
-    fare in a relaxed atmosphere. The menu changes
-    regularly to highlight the freshest local ingredients.
-  </p>
+    <p>
+      The Black Goose Bistro offers casual lunch and
+      dinner fare in a relaxed atmosphere. The menu
+      changes regularly to highlight the freshest
+      local ingredients.
+    </p>
+  </section>
 
-  <h2>Catering</h2>
+  <section>
+    <h2>Catering</h2>
 
-  <p>
-    You have fun. <em>We'll handle the cooking.</em>
-    Black Goose Catering can handle events from snacks
-    for a meetup to elegant corporate fundraisers.
-  </p>
+    <p>
+      You have fun. <em>We'll handle the cooking.</em>
+      Black Goose Catering can handle events from
+      snacks for a meetup to elegant corporate
+      fundraisers.
+    </p>
+  </section>
 
-  <h2>Location and Hours</h2>
+  <section>
+    <h2>Location and Hours</h2>
 
-  <p>
-    Seekonk, Massachusetts;<br>
-    Monday through Thursday 11am to 9pm;<br>
-    Friday and Saturday, 11am to midnight
-  </p>
+    <p>
+      Seekonk, Massachusetts;<br>
+      Monday through Thursday 11am to 9pm;<br>
+      Friday and Saturday, 11am to midnight
+    </p>
+  </section>
 
   <hr>
 
-  <section class="recipes">
-
-    <h2>Jen's Kitchen</h2>
-
-    <p>
-      Welcome to Jen's Kitchen! Explore our collection
-      of delicious recipes below.
-    </p>
-
-    <h2>Recipes</h2>
+  <section class="links">
+    <h2>Explore Our Pages</h2>
 
     <ul>
-
       <li>
-        <a href="tapenade.html">
-          <img src="images/spoon.gif"
-               alt=""
-               class="spoon">
-          Tapenade
+        <a href="bgnews.html">
+          Black Goose Bistro News
         </a>
       </li>
 
       <li>
-        <a href="salmon.html">
-          <img src="images/spoon.gif"
-               alt=""
-               class="spoon">
-          Garlic Salmon
+        <a href="glossary-done.html">
+          Glossary
         </a>
       </li>
 
       <li>
-        <a href="couscous.html">
-          <img src="images/spoon.gif"
-               alt=""
-               class="spoon">
-          Couscous
+        <a href="../jenskitchen/index.html">
+          Visit Jen's Kitchen
         </a>
       </li>
-
-      <li>
-        <a href="linguine.html">
-          <img src="images/spoon.gif"
-               alt=""
-               class="spoon">
-          Linguine
-        </a>
-      </li>
-
     </ul>
-
   </section>
+
+  <footer>
+    <p>Black Goose Bistro</p>
+  </footer>
 
 </body>
 </html>
