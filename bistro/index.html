@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Black Goose Bistro</title>
 
@@ -42,53 +42,46 @@
       text-align: center;
     }
 
-    a {
-      color: #ffcc80;
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
     }
 
-    a:hover {
-      color: white;
-    }
-
-    nav {
-      text-align: center;
-      margin-bottom: 36px;
+    nav li {
+      display: inline;
     }
 
     nav a {
-      display: inline-block;
-      margin: 5px 12px;
+      color: darkslategray;
+      text-decoration: none;
     }
 
-    section {
-      margin-bottom: 35px;
+    nav a:hover {
+      color: orange;
+      text-decoration: underline;
     }
 
-    .links {
-      text-align: center;
-      margin-top: 35px;
+    main {
+      margin-top: 36px;
     }
 
-    .links ul {
-      list-style-type: none;
-      padding: 0;
+    p {
+      margin-bottom: 1.5em;
     }
 
-    .links li {
-      margin: 12px 0;
+    a {
+      color: orange;
     }
 
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 40px;
-      padding-bottom: 20px;
+    a:hover {
+      color: floralwhite;
     }
 
-    hr {
-      border: 0;
-      border-top: 1px solid #faf2e4;
-    }
   </style>
 
 </head>
@@ -96,81 +89,84 @@
 <body>
 
   <header>
-    <img src="images/blackgoose.png"
-         alt="Black Goose Bistro logo">
+
+    <img
+      src="images/blackgoose.png"
+      alt="goose logo"
+      onerror="this.onerror=null;this.src='https://profkappers.github.io/fid/bistro/images/blackgoose.png';"
+    >
 
     <h1>Black Goose Bistro</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="#menu">Menu</a>
+        </li>
+
+        <li>
+          <a href="bgnews.html">News</a>
+        </li>
+
+        <li>
+          <a href="about.html">Our Chef</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="bgnews.html">Bistro News</a>
-    <a href="about.html">About</a>
-    <a href="glossary-done.html">Glossary</a>
-    <a href="../jenskitchen/index.html">Jen's Kitchen</a>
-  </nav>
+  <main>
 
-  <section>
-    <h2>The Restaurant</h2>
+    <section id="restaurant">
 
-    <p>
-      The Black Goose Bistro offers casual lunch and
-      dinner fare in a relaxed atmosphere. The menu
-      changes regularly to highlight the freshest
-      local ingredients.
-    </p>
-  </section>
+      <h2>The Restaurant</h2>
 
-  <section>
-    <h2>Catering</h2>
+      <p>
+        The Black Goose Bistro offers casual lunch
+        and dinner fare in a relaxed atmosphere.
+        The menu changes regularly to highlight
+        the freshest local ingredients.
+      </p>
 
-    <p>
-      You have fun. <em>We'll handle the cooking.</em>
-      Black Goose Catering can handle events from
-      snacks for a meetup to elegant corporate
-      fundraisers.
-    </p>
-  </section>
+    </section>
 
-  <section>
-    <h2>Location and Hours</h2>
+    <section id="catering">
 
-    <p>
-      Seekonk, Massachusetts;<br>
-      Monday through Thursday 11am to 9pm;<br>
-      Friday and Saturday, 11am to midnight
-    </p>
-  </section>
+      <h2>Catering</h2>
 
-  <hr>
+      <p>
+        You have fun.
+        <em>We'll handle the cooking.</em>
+        Black Goose Catering can handle events
+        from snacks for a meetup to elegant
+        corporate fundraisers.
+      </p>
 
-  <section class="links">
-    <h2>Explore Our Pages</h2>
+    </section>
 
-    <ul>
-      <li>
-        <a href="bgnews.html">
-          Black Goose Bistro News
-        </a>
-      </li>
+    <section id="contact">
 
-      <li>
-        <a href="glossary-done.html">
-          Glossary
-        </a>
-      </li>
+      <h2>Location and Hours</h2>
 
-      <li>
-        <a href="../jenskitchen/index.html">
-          Visit Jen's Kitchen
-        </a>
-      </li>
-    </ul>
-  </section>
+      <p>
+        Seekonk, Massachusetts;<br>
+        Monday through Thursday 11am to 9pm;<br>
+        Friday and Saturday, 11am to midnight
+      </p>
 
-  <footer>
-    <p>Black Goose Bistro</p>
-  </footer>
+    </section>
+
+  </main>
 
 </body>
+
 </html>
