@@ -1,14 +1,12 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-
   <title>Black Goose Bistro</title>
 
   <style>
-
     body {
       margin: 0 10%;
       font: 1.25rem/1.75rem sans-serif;
@@ -42,39 +40,83 @@
       text-align: center;
     }
 
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: orange;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    a {
+      color: floralwhite;
+    }
+
+    a:hover {
+      color: orange;
+    }
+
+    .recipes {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .recipes ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .recipes li {
+      margin: 12px 0;
+    }
+
+    .spoon {
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
   </style>
 
 </head>
 
-
 <body>
 
   <header>
-
-    <img src="images/blackgoose.png" alt="black goose logo">
+    <img src="images/blackgoose.png"
+         alt="Black Goose Bistro logo">
 
     <h1>Black Goose Bistro</h1>
-
   </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="glossary-done.html">Glossary</a>
+    <a href="bgnews.html">News</a>
+  </nav>
 
   <h2>The Restaurant</h2>
 
   <p>
-    The Black Goose Bistro offers casual lunch and dinner fare in a relaxed
-    atmosphere. The menu changes regularly to highlight the freshest local
-    ingredients.
+    The Black Goose Bistro offers casual lunch and dinner
+    fare in a relaxed atmosphere. The menu changes
+    regularly to highlight the freshest local ingredients.
   </p>
-
 
   <h2>Catering</h2>
 
   <p>
     You have fun. <em>We'll handle the cooking.</em>
-    Black Goose Catering can handle events from snacks for a meetup
-    to elegant corporate fundraisers.
+    Black Goose Catering can handle events from snacks
+    for a meetup to elegant corporate fundraisers.
   </p>
-
 
   <h2>Location and Hours</h2>
 
@@ -84,6 +126,60 @@
     Friday and Saturday, 11am to midnight
   </p>
 
-</body>
+  <hr>
 
+  <section class="recipes">
+
+    <h2>Jen's Kitchen</h2>
+
+    <p>
+      Welcome to Jen's Kitchen! Explore our collection
+      of delicious recipes below.
+    </p>
+
+    <h2>Recipes</h2>
+
+    <ul>
+
+      <li>
+        <a href="tapenade.html">
+          <img src="images/spoon.gif"
+               alt=""
+               class="spoon">
+          Tapenade
+        </a>
+      </li>
+
+      <li>
+        <a href="salmon.html">
+          <img src="images/spoon.gif"
+               alt=""
+               class="spoon">
+          Garlic Salmon
+        </a>
+      </li>
+
+      <li>
+        <a href="couscous.html">
+          <img src="images/spoon.gif"
+               alt=""
+               class="spoon">
+          Couscous
+        </a>
+      </li>
+
+      <li>
+        <a href="linguine.html">
+          <img src="images/spoon.gif"
+               alt=""
+               class="spoon">
+          Linguine
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+</body>
 </html>
